@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,13 @@
 </head>
 <header>
     <a href="#" class="logo">
-        Web<p>Studio</p>
+        Web<span>Studio</span>
     </a>
     <nav class="links">
         <ul>
             <li>
-                <a href=""><p>Студия</p></a> <!--tag p changed color-->
+                <a href=""><span>Студия</span></a> <!--tag span changed color-->
+                 <!--якщо не подобається поясніть як зробити щоб у батька один тег синій-->
             </li>
             <li>
                 <a href="portfolio.html">Портфолио</a>
@@ -27,50 +28,49 @@
     </nav>
     <ul class="contacts">
         <li>
-            <a href="" class="mail"> info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
         </li>
         <li>
-            <a href="">+38 096 111 11 11</a>
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
     </ul>
 </header>
 <main>
     <section class="banner">
         <h1>Эффективные решения для вашего бизнеса</h1>
-        <button>Заказать услугу</button>
+        <button type="button">Заказать услугу</button>
     </section>
+    <!--вибачте, не розумію який тут треба заголовок робити, і навіщо він потрібен.-->
     <section class="benefits m-bt-95">
         <ul>
             <li>
                 <h3>Внимание к деталям</h3>
-                <p lang="en">
+
                     Идейные соображения, а также начало повседневной работы по формированию позиции.
                 </p>
             </li>
             <li>
                 <h3>Пунктуальность</h3>
-                <p lang="en">
                     Идейные соображения, а также начало повседневной работы по формированию позиции.
                 </p>
             </li>
             <li>
                 <h3>Планирование</h3>
-                <p lang="en">
                     Идейные соображения, а также начало повседневной работы по формированию позиции.
                 </p>
             </li>
             <li>
                 <h3>Современные технологии</h3>
-                <p lang="en">
                     Идейные соображения, а также начало повседневной работы по формированию позиции.
                 </p>
             </li>
         </ul>
     </section>
 
-    <div class="works">
+    <section class="works">
         <h2 class="title_1">Чем мы занимаемся</h2>
         <ul>
+            <!--що значить вказати ширину зображень яка вказана в макеті, але не в пікселях? в чому указати? в сss якщо пропишу сторінка втратить гнучкість. вони в мене відповідають розмірам в макеті. -->
             <li>
                 <img class="img1" src="images/img1.jpg" alt="img1">
             </li>
@@ -81,7 +81,7 @@
                 <img class="img3"src="images/img3.jpg" alt="img3">
             </li>
         </ul>
-    </div>
+    </section>
 
     <section class="team m-bt-95">
         <h2>Наша команда</h2>
@@ -112,14 +112,14 @@
 </main>
 
 <footer>
-   <a class="bottom_logo" href="">Web<p>Studio</p></a>
     <address>
-        г. Киев, пр-т Леси Украинки, 26
-    </address>
+   <a class="bottom_logo" href="">Web<span>Studio</span></a>
     <ul>
+        <li><span><a href="google_maps">г. Киев, пр-т Леси Украинки, 26</a></span></li>
         <li><a href="mailto:info@example.com">info@example.com</a></li>
         <li><a href="+380991111111">+38 099 111 11 11</a></li>
     </ul>
+    </address>
 </footer>
 
 </html>
